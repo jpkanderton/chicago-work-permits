@@ -1,0 +1,36 @@
+{
+  "name": "chicago-work-permits",
+  "version": "1.0.0",
+  "description": "dashboard of chicago work permit",
+  "main": "api-key.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpkanderton/chicago-work-permits.git"
+  },
+  "author": "john anderton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpkanderton/chicago-work-permits/issues"
+  },
+  "homepage": "https://github.com/jpkanderton/chicago-work-permits#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
