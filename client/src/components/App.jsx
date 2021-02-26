@@ -4,9 +4,21 @@ import Dashboard from './Dashboard.jsx';
 import Header from './Header.jsx';
 import Pending from './Loading.jsx';
 
-const { useState, useEffect } = React;
-
 const App = () =>{
+  const { useState, useEffect } = React;
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get('/getPermits')
+    .then(result => {
+      console.log(result.data);
+      setData(result.data);
+    })
+    .catch(error => {
+      console.log('error is: ', error);
+    })
+  }, []);
+
   return (
   <div id="app-container">
     <Header />
