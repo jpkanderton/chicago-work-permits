@@ -7,12 +7,13 @@ import Pending from './Loading.jsx';
 const App = () =>{
   const { useState, useEffect } = React;
   const [data, setData] = useState([]);
+  const [currentPermit, setCurrentPermit] = useState({});
 
   useEffect(() => {
     axios.get('/getPermits')
     .then(result => {
-      console.log(result.data);
       setData(result.data);
+      setCurrentPermit(result.data[0])
     })
     .catch(error => {
       console.log('error is: ', error);
