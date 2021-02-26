@@ -4,8 +4,9 @@ import Dashboard from './Dashboard.jsx';
 import Header from './Header.jsx';
 import Pending from './Loading.jsx';
 
+const { useState, useEffect } = React;
+
 const App = () =>{
-  const { useState, useEffect } = React;
   const [data, setData] = useState([]);
   const [currentPermit, setCurrentPermit] = useState({});
 
@@ -27,6 +28,7 @@ const App = () =>{
   return (
   <div id="app-container">
     <Header />
+    {data.length > 0 ? <Dashboard data = {data} currentPermit = {currentPermit} clickEvent= {clickEvent} /> : <Pending />}
   </div>)
 }
 
