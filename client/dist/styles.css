@@ -1,0 +1,50 @@
+#app-container {
+  min-width: 450px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pending-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+#pending-animation-container {
+  height: 50px;
+  width: 50px;
+}
+
+#spinning-circles {
+  color: red;
+}
+
+#dashboard {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.panel-container {
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  border: 2px;
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+}
+
+.panel-container * {
+  word-wrap: break-word;
+  color: red;
+}
