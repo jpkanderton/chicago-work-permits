@@ -9,6 +9,10 @@ const App = () =>{
   const [data, setData] = useState([]);
   const [currentPermit, setCurrentPermit] = useState({});
 
+  const clickEvent = (num) => {
+    setCurrentPermit(data[num])
+  }
+
   useEffect(() => {
     axios.get('/getPermits')
     .then(result => {
